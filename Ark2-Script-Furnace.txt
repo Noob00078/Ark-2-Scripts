@@ -1,0 +1,16 @@
+{{#items E.S 'box-000-Sorting'}}
+{{~set 'FoundBox1B' ''}}
+{{~set 'Amount' ''}}
+
+{{#test Id in '4297,4298,4299,4300,4301,4317,4318,4332,4345,4359,4365'}}
+{{~set 'FoundBox1B' 'utl-061-Furnace'}}
+{{/test}}
+
+{{#ok @root.Data.FoundBox1B}}
+{{#move ../. @root.E.S @root.Data.FoundBox1B @root.Data.Amount}}
+{{datetime}}
+{{Source}} -> {{Destination}} 
+{{format Count '{0,5}'}}:
+{{/move}}
+{{/ok}}
+{{/items}}

@@ -1,0 +1,44 @@
+{{fontsize 4}}
+{{#items E.S 'box-000-Sorting'}}
+{{#test Id in 4326}}
+{{move this @root.E.S 'box-011*'}}
+{{datetime}}
+{{SourceE.Name}}:{{Source}}->
+{{~DestinationE.Name}}:{{Destination}}
+{{format Count '{0,5}'}} :
+{{/move}}
+{{/test}}
+{{/items}}
+
+{{#items E.S 'box-000-Sorting'}}
+{{#test Id in 4327}}
+{{move this @root.E.S 'box-012*'}}
+{{datetime}}
+{{SourceE.Name}}:{{Source}}->
+{{~DestinationE.Name}}:{{Destination}}
+{{format Count '{0,5}'}} :
+{{/move}}
+{{/test}}
+{{/items}}
+
+{{#items E.S 'box-000-Sorting'}}
+{{#test Id in 4346,4366,4367}}
+{{move this @root.E.S 'box-013*'}}
+{{datetime}}
+{{SourceE.Name}}:{{Source}}->
+{{~DestinationE.Name}}:{{Destination}}
+{{format Count '{0,5}'}} :
+{{/move}}
+{{/test}}
+{{/items}}
+
+{{#items E.S 'box-000-Sorting'}}
+{{#test Id in 4302,4325}}
+{{move this @root.E.S 'box-014*'}}
+{{datetime}}
+{{SourceE.Name}}:{{Source}}->
+{{~DestinationE.Name}}:{{Destination}}
+{{format Count '{0,5}'}} :
+{{/move}}
+{{/test}}
+{{/items}}

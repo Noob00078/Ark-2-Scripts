@@ -1,0 +1,20 @@
+{{#items E.S 'box-000-Sorting'}}
+{{~set 'FoundBox1G' ''}}
+{{~set 'Amount' ''}}
+
+{{#test Id in '490,591,594,597,600,607,639,641,644,1167,1171,1175,1179,1367,1527,1531,1597,1601,2049'}}
+{{~set 'FoundBox1G' 'box-106*'}}
+{{/test}}
+
+{{#test Id in '339,554,706,711,1110,1485,4119,4127,4136,4137,4796,4798,5846'}}
+{{~set 'FoundBox1G' 'box-107*'}}
+{{/test}}
+
+{{#ok @root.Data.FoundBox1G}}
+{{#move ../. @root.E.S @root.Data.FoundBox1G @root.Data.Amount}}
+{{datetime}}
+{{Source}} -> {{Destination}} 
+{{format Count '{0,5}'}}:
+{{/move}}
+{{/ok}}
+{{/items}}

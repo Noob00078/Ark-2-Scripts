@@ -1,0 +1,36 @@
+{{#items E.S 'box-000-Sorting'}}
+{{~set 'FoundBox1F' ''}}
+{{~set 'Amount' ''}}
+
+{{#test Id in '4120,4121,4122,4123,4124,4125,4126,4128,4129,4130,4134,4138,4139,5652,5654,5655,5657,5818,5819,5820,5852,5854,5855'}}
+{{~set 'FoundBox1F' 'box-101*'}}
+{{/test}}
+
+{{#test Id in '4147,4148,4149,4150,4151,4153,4154,4156,4157,4158,4160,4161,4162,4163,4251,4255,4273,5696'}}
+{{~set 'FoundBox1F' 'box-102*'}}
+{{/test}}
+
+{{#test Id in '4351,4352,4353,4354,4355,4356'}}
+{{~set 'FoundBox1F' 'box-103*'}}
+{{/test}}
+
+{{#test Id in '4696,4697,4698,4699,4700,4701,5841,5842,5844'}}
+{{~set 'FoundBox1F' 'box-104*'}}
+{{/test}}
+
+{{#test Id in '4717,4718,4719,4720,4721,4722,4723,4724,4725,4746,4747,4748,4750,4751,4752'}}
+{{~set 'FoundBox1F' 'box-105*'}}
+{{/test}}
+
+{{#test Id in '4099,4100,4101,4102,4103,4104,4105,4106,4111,4112,4113,4115,4116,4133'}}
+{{~set 'FoundBox1F' 'utl-062-Deconstruct'}}
+{{/test}}
+
+{{#ok @root.Data.FoundBox1F}}
+{{#move ../. @root.E.S @root.Data.FoundBox1F @root.Data.Amount}}
+{{datetime}}
+{{Source}} -> {{Destination}} 
+{{format Count '{0,5}'}}:
+{{/move}}
+{{/ok}}
+{{/items}}

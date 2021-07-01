@@ -1,0 +1,16 @@
+{{#items E.S 'box-000-Sorting'}}
+{{~set 'FoundBox1H' ''}}
+{{~set 'Amount' ''}}
+
+{{#test Id in '4152,4246,4247,4248,4249,4250,4252,4253,4254,4256,4257,4258,4259,4260,4261,4262,4263,4264,4265,4266,4267,4268,4270,5697,5698,5702,5734,7197,7199,7201'}}
+{{~set 'FoundBox1H' 'box-201*'}}
+{{/test}}
+
+{{#ok @root.Data.FoundBox1H}}
+{{#move ../. @root.E.S @root.Data.FoundBox1H @root.Data.Amount}}
+{{datetime}}
+{{Source}} -> {{Destination}} 
+{{format Count '{0,5}'}}:
+{{/move}}
+{{/ok}}
+{{/items}}

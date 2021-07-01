@@ -1,0 +1,56 @@
+{{fontsize 4}}
+
+{{#items E.S 'box-000-Sorting'}}
+{{#test Id in 1313,1316,4303,4304,4305,4306,4307,4308,4309,4310,4311,4312,4316,4330,4334,4340,4350,4374,4375,4378,4379,4380,4381,5098,5099,5103,5105,5106,5107,5706,5707,5708,5797,5948,5949,5962,5969,5990,5991}}
+{{move this @root.E.S 'box-028*'}}
+{{datetime}}
+{{SourceE.Name}}:{{Source}}->
+{{~DestinationE.Name}}:{{Destination}}
+{{format Count '{0,5}'}} :
+{{/move}}
+{{/test}}
+{{/items}}
+
+{{#items E.S 'box-000-Sorting'}}
+{{#test Id in 4313,4315,4343,4361}}
+{{move this @root.E.S 'box-029*'}}
+{{datetime}}
+{{SourceE.Name}}:{{Source}}->
+{{~DestinationE.Name}}:{{Destination}}
+{{format Count '{0,5}'}} :
+{{/move}}
+{{/test}}
+{{/items}}
+
+{{#items E.S 'box-000-Sorting'}}
+{{#test Id in 4328,4329}}
+{{move this @root.E.S 'box-030*'}}
+{{datetime}}
+{{SourceE.Name}}:{{Source}}->
+{{~DestinationE.Name}}:{{Destination}}
+{{format Count '{0,5}'}} :
+{{/move}}
+{{/test}}
+{{/items}}
+
+{{#items E.S 'box-000-Sorting'}}
+{{#test Id in 462,1238,1239,1549}}
+{{move this @root.E.S 'box-031*'}}
+{{datetime}}
+{{SourceE.Name}}:{{Source}}->
+{{~DestinationE.Name}}:{{Destination}}
+{{format Count '{0,5}'}} :
+{{/move}}
+{{/test}}
+{{/items}}
+
+{{#items E.S 'box-000-Sorting'}}
+{{#test Id in 929,1336,1465,1466,1739,4344,4347,5097,5976,7546}}
+{{move this @root.E.S 'box-032*'}}
+{{datetime}}
+{{SourceE.Name}}:{{Source}}->
+{{~DestinationE.Name}}:{{Destination}}
+{{format Count '{0,5}'}} :
+{{/move}}
+{{/test}}
+{{/items}}
